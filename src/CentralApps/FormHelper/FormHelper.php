@@ -35,7 +35,7 @@ class FormHelper
 	public function fieldHasErrors($field)
 	{
 		if (is_null($this->errors)) {
-			return false
+			return false;
 		}
 
 		return $this->errors->hasErrorsForField($field);

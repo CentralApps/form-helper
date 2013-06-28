@@ -24,7 +24,7 @@ class FormErrors implements \Countable
 
 	public function getErrorsForField($field)
 	{
-		if (array_key_exists($field, $this->data)) {
+		if (array_key_exists($field, $this->errors)) {
 			if (is_array($this->errors[$field])) {
 				return $this->errors[$field];
 			} else {
