@@ -1,7 +1,7 @@
 <?php
 namespace CentralApps\FormHelper\Data;
 
-abstract class FormData implements \Countable
+class FormData implements \Countable
 {
 	protected $data = array();
 
