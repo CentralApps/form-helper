@@ -22,7 +22,7 @@ class FormDataGetterAccess extends FormData
 
 	public function getDataForField($field)
 	{
-		$property = str_replace($this->prefixToRemove, '', $field);
+		$property = preg_replace('/' . $this->prefixToRemove . '/', '', $field, 1);
 		$property = str_replace('_', ' ', $property);
 		$property = ucwords($property);
 		$property = str_replace(' ', '', $property);
